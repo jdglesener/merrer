@@ -10,4 +10,4 @@ for line in sys.stdin:
       for c in word:
         if c.upper() in "abcdefghijklmnopqrstuvwxyz":
           w += c.upper()
-      print(w)
+      print(f"{w}\t{1}")
