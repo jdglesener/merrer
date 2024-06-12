@@ -81,7 +81,11 @@ mapred streaming \
   -file scripts/reducer.py"
 > scripts/mrps.sh
 ```
-Once I run this, to retest my MapReduce functions I only have to run the following line.
+Before I can run this I need to give the container permission to run the file with the following line
+```
+chmod 777 scripts/mrps.sh
+```
+Once I run this, to retest my MapReduce functions I only have to run the following line
 ```
 scripts/mrps.sh
 ```
