@@ -1,7 +1,21 @@
 # merrer
 I haven't done the last assignment yet so I will work through my process on getting Hadoop up and running by building a full readme.
 
-I am starting out verifying the existence of docker
+I used the same books data that we've been working with
+
+Here is my mapred streaming command 
+```
+hdfs dfs -rm -r /user/sandbox/words
+mapred streaming \
+  -input /user/sandbox/books \
+  -output /user/sandbox/words -mapper mapper.py \
+  -reducer reducer.py \
+  -file scripts/mapper.py \
+  -file scripts/reducer.py
+```
+mapper.py and reducer.py are both from this repository. I was having trouble with the connection to the cloud shell so I didn't get the chance to the actually test the programs.
+
+I am starting out verifying the existence of Docker
 ```
 docker run hello-world
 ```
