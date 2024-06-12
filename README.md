@@ -54,8 +54,7 @@ hdfs dfs -ls /user/sandbox/books
 
 I used this command to write create a new file mrps.sh into the scripts folder
 ```
-echo 
-"rm scripts/mapper.py
+echo "rm scripts/mapper.py
 rm scripts/reducer.py
 curl https://github.com/jdglesener/merrer/edit/main/mapper.py -o scripts/mapper.py
 curl https://raw.githubusercontent.com/jdglesener/merrer/main/reducer.py -o scripts/reducer.py
