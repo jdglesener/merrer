@@ -8,6 +8,6 @@ for line in sys.stdin:
     for word in words:
       w = ""
       for c in word:
-        if c.upper() in "abcdefghijklmnopqrstuvwxyz":
-          w += c.upper()
+        if c.lower() in "abcdefghijklmnopqrstuvwxyz":
+          w += c.lower()
       print(f"{w}\t{1}")
